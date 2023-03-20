@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>1x</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: rgb(187, 165, 206);">
+	<div class="tete">
+        <input type="number" id="coupon" placeholder="Valeur du coupon" required>
+        <input type="number" id="simple" placeholder="Valeur du simple" required><br>
+    <label>Entrez un montant : </label>
+	<input type="number" id="montant" placeholder="Entrez le montant">
+
+
+	<button onclick="calculer()" type="submit" >Calcul</button>
+    <button onclick="reset()" type="reset"  >Reset</button>
+    </div>
+	<div>
+		<label><strong id="cote">  </strong></label>
+		<input type="number" id="a" class="result" placeholder="montant à parier" readonly><input type="number" id="ra" class="result" placeholder="resultat" readonly> <input type="number" id="ga" class="result" placeholder="gain" readonly>
+	</div>
+
+	<div>
+		<label><strong id="cote"> </strong></label>
+		<input type="number" id="b" class="result" placeholder="montant à parier" readonly><input type="number" id="rb" class="result" placeholder="resultat" readonly> <input type="number" id="gb" class="result" placeholder="gain" readonly>
+	</div>
+
+	<div>
+		<label><strong id="cote"> </strong></label>
+		<input type="number" id="c" class="result" placeholder="montant à parier" readonly><input type="number" id="rc" class="result" placeholder="resultat" readonly> <input type="number" id="gc" class="result" placeholder="gain" readonly>
+	</div>
+    <p></p>
+    <h1></h1>
+    <p></p>
+    <strong>
+        <h3>
+        <p id="">
+            <li id="cas1"></li><input type="number" id="sa" class="result" placeholder="Solde" readonly><br>
+            <li id="cas2"></li><input type="number" id="sb" class="result" placeholder="Solde" readonly><br>
+            <li id="cas3"></li><input type="number" id="sc" class="result" placeholder="Solde" readonly><br>
+        </p>
+        </h3>
+    </strong>
+    <script src="./choix2.js"></script>
+</body>
+</html>
